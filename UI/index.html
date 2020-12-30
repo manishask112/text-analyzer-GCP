@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>Text Analyzer</title>
+  <script type="text/javascript" src="processSelection.js"></script>
+</head>
+<body style = "background-color: wheat; color: maroon;">
+  <h3>This is a Text Analyzer</h3>
+  <br>
+  <h4>Select text URLs from the drop down. Click on submit and after a few seconds, the graph showing the sentence distribution will appear.</h4>
+  <br><br>
+  <div>
+    <label for="textURL">Choose an option:</label>
+    <select name="textURL" id="url">
+        <option value="https://www.gutenberg.org/files/84/84-0.txt">Frankenstein, by Mary Wollstonecraft</option>
+        <option value="https://www.gutenberg.org/files/1342/1342-0.txt">Pride and Prejudice, by Jane Austen</option>
+        <option value="http://www.gutenberg.org/cache/epub/5200/pg5200.txt">Metamorphosis, by Franz Kafka</option>
+        <option value="https://www.gutenberg.org/files/98/98-0.txt">A Tale of Two Cities, by Charles Dickens</option>
+        <option value="https://www.gutenberg.org/files/11/11-0.txt">Alice’s Adventures in Wonderland, by Lewis Carroll</option>
+        <option value="https://www.gutenberg.org/files/43/43-0.txt">The Strange Case Of Dr. Jekyll And Mr.Hyde, by Robert Louis Stevenson</option>
+        <option value="https://www.gutenberg.org/files/76/76-0.txt">Adventures of Huckleberry Finn, Complete by Mark Twain (Samuel Clemens)</option>
+        <option value="http://www.gutenberg.org/cache/epub/174/pg174.txt">The Picture of Dorian Gray, by Oscar Wilde</option>
+    </select>
+    <!-- https://www.gutenberg.org/files/84/84-0.txt -->
+    <!-- onclick="generateGraph()" -->
+    <button onclick="generateGraph()">
+        Submit
+    </button>
+    </br></br>
+    <div id ="showURL"></div>
+    </br>
+    <div id = "target" >
+    </div>
+  </div>
+</body>
+</html>
